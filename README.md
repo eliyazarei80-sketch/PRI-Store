@@ -12,12 +12,12 @@
 
 ## اسکرین‌شات‌ها
 
-![لوگو](Screenshots/Screenshot1.png)
-![صفحه اصلی](Screenshots/Screenshot2.png)
-![سبد خرید](Screenshots/Screenshot3.png)
-![فاکتور](Screenshots/Screenshot4.png)
-![ادمین](Screenshots/Screenshot5.png)
-![گزارش‌گیری](Screenshots/Screenshot6.png)
+![لوگو](https://raw.githubusercontent.com/eliyazarei80-sketch/PRI-Store/master/Screenshots/Screenshot1.png)
+![صفحه اصلی](https://raw.githubusercontent.com/eliyazarei80-sketch/PRI-Store/master/Screenshots/Screenshot2.png)
+![سبد خرید](https://raw.githubusercontent.com/eliyazarei80-sketch/PRI-Store/master/Screenshots/Screenshot3.png)
+![فاکتور](https://raw.githubusercontent.com/eliyazarei80-sketch/PRI-Store/master/Screenshots/Screenshot4.png)
+![ادمین](https://raw.githubusercontent.com/eliyazarei80-sketch/PRI-Store/master/Screenshots/Screenshot5.png)
+![گزارش‌گیری](https://raw.githubusercontent.com/eliyazarei80-sketch/PRI-Store/master/Screenshots/Screenshot6.png)
 
 ## تکنولوژی‌ها
 - C# .NET Windows Forms
