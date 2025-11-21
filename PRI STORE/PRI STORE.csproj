@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33BF83A7-F9EE-425F-A5AE-F9F2104F8970}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRI_STORE</RootNamespace>
+    <AssemblyName>PRI STORE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginForm.Designer.cs">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arayeshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayeshi.Designer.cs">
+      <DependentUpon>Arayeshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bache.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bache.Designer.cs">
+      <DependentUpon>bache.cs</DependentUpon>
+    </Compile>
+    <Compile Include="barca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="barca.Designer.cs">
+      <DependentUpon>barca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bereng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bereng.Designer.cs">
+      <DependentUpon>bereng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dastebandi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dastebandi.Designer.cs">
+      <DependentUpon>Dastebandi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dastkesh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dastkesh.Designer.cs">
+      <DependentUpon>dastkesh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductForm.Designer.cs">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.cs" />
+    <Compile Include="Form sabtenam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form sabtenam.Designer.cs">
+      <DependentUpon>Form sabtenam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hoodii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hoodii.Designer.cs">
+      <DependentUpon>hoodii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iphone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iphone.Designer.cs">
+      <DependentUpon>iphone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kafsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kafsh.Designer.cs">
+      <DependentUpon>kafsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="karbaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="karbaran.Designer.cs">
+      <DependentUpon>karbaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kerem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kerem.Designer.cs">
+      <DependentUpon>kerem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="khoraki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khoraki.Designer.cs">
+      <DependentUpon>khoraki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="koot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koot.Designer.cs">
+      <DependentUpon>koot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laak.Designer.cs">
+      <DependentUpon>laak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lebass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lebass.Designer.cs">
+      <DependentUpon>lebass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mahsollat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mahsollat.Designer.cs">
+      <DependentUpon>mahsollat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manto.Designer.cs">
+      <DependentUpon>manto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantoo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantoo.Designer.cs">
+      <DependentUpon>mantoo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mobile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mobile.Designer.cs">
+      <DependentUpon>mobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nokia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nokia.Designer.cs">
+      <DependentUpon>nokia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noshabe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noshabe.Designer.cs">
+      <DependentUpon>noshabe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pashneboland.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pashneboland.Designer.cs">
+      <DependentUpon>pashneboland.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pirhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pirhan.Designer.cs">
+      <DependentUpon>pirhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pishnahadmahsollat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pishnahadmahsollat.Designer.cs">
+      <DependentUpon>pishnahadmahsollat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pizza.Designer.cs">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="podresorat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="podresorat.Designer.cs">
+      <DependentUpon>podresorat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rob.Designer.cs">
+      <DependentUpon>rob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roogh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roogh.Designer.cs">
+      <DependentUpon>roogh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="setmardane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setmardane.Designer.cs">
+      <DependentUpon>setmardane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setzanane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setzanane.Designer.cs">
+      <DependentUpon>setzanane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shalvarzanane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shalvarzanane.Designer.cs">
+      <DependentUpon>shalvarzanane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shirt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shirt.Designer.cs">
+      <DependentUpon>shirt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siyomi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siyomi.Designer.cs">
+      <DependentUpon>siyomi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sumsung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sumsung.Designer.cs">
+      <DependentUpon>sumsung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toop.Designer.cs">
+      <DependentUpon>toop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="varzeshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="varzeshi.Designer.cs">
+      <DependentUpon>varzeshi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductForm.resx">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayeshi.resx">
+      <DependentUpon>Arayeshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bache.resx">
+      <DependentUpon>bache.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="barca.resx">
+      <DependentUpon>barca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bereng.resx">
+      <DependentUpon>bereng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dastebandi.resx">
+      <DependentUpon>Dastebandi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dastkesh.resx">
+      <DependentUpon>dastkesh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProductForm.resx">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form sabtenam.resx">
+      <DependentUpon>Form sabtenam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hoodii.resx">
+      <DependentUpon>hoodii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iphone.resx">
+      <DependentUpon>iphone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kafsh.resx">
+      <DependentUpon>kafsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="karbaran.resx">
+      <DependentUpon>karbaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kerem.resx">
+      <DependentUpon>kerem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="khoraki.resx">
+      <DependentUpon>khoraki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="koot.resx">
+      <DependentUpon>koot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laak.resx">
+      <DependentUpon>laak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lebass.resx">
+      <DependentUpon>lebass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mahsollat.resx">
+      <DependentUpon>mahsollat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manto.resx">
+      <DependentUpon>manto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantoo.resx">
+      <DependentUpon>mantoo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mobile.resx">
+      <DependentUpon>mobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nokia.resx">
+      <DependentUpon>nokia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noshabe.resx">
+      <DependentUpon>noshabe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pashneboland.resx">
+      <DependentUpon>pashneboland.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pirhan.resx">
+      <DependentUpon>pirhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pishnahadmahsollat.resx">
+      <DependentUpon>pishnahadmahsollat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pizza.resx">
+      <DependentUpon>pizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="podresorat.resx">
+      <DependentUpon>podresorat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rob.resx">
+      <DependentUpon>rob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roogh.resx">
+      <DependentUpon>roogh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setmardane.resx">
+      <DependentUpon>setmardane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setzanane.resx">
+      <DependentUpon>setzanane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shalvarzanane.resx">
+      <DependentUpon>shalvarzanane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shirt.resx">
+      <DependentUpon>shirt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siyomi.resx">
+      <DependentUpon>siyomi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sumsung.resx">
+      <DependentUpon>sumsung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toop.resx">
+      <DependentUpon>toop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="varzeshi.resx">
+      <DependentUpon>varzeshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bab1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000cdd862468188c8d7ff9bbb3e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000073986230bbe83e46a8f64303.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20250525_163928_673.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentation1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000420861f9a9a61a62283126ea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000abec61f9bc222c09d03c8a98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20250525_163928_6731.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000becc622f91531a959c2af78d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002c9061f9b54e2ae5b3dfe439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000001e2c620a9d70cef6783a00b4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000006bd86230b50db6cf2f30536f %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000378061f780e3f922682ea756.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000074e061f885bfef7212e70fb0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000c8f461f79f175293eba14da4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000074e061f885bfef7212e70fb01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000f3d0624383f629cb5bc78afe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000008cf8622f8073380be536df5d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000957c61f5b56a37d10d64d6d7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002418622f99213b0a2799fbc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000005688622f9e4f23fe76473080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000107461fd89584c6372a26d93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000aa006246b006e31e7df7be2e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000396861f7a17d10cdbb5cf8b5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004e0061f5a31ecbc2cb1dcc7f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000000a0861f8a34572086b071e02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000039fc61f7940ddd5fd2c28ce3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000007cf461f4ae27cad0368d743d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000957c61f5b56a37d10d64d6d71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000957c61f5b56a37d10d64d6d72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000957c61f5b56a37d10d64d6d73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000764461f8aa7f131001997564.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000a40862309a7cca462f569180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000039fc61f7940ddd5fd2c28ce31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000036d461fdbe609c19c54ab86a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000f37461f7b3c81ce78e426978.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000dbdc61f8bfac5700ec5907d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000b57c61f8bdd5a7fc77ab957e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000cdd861f89701226bf009197f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000aa1861f580d7b96789f519ac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000d65c61fdb1a2df461e9256b3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002e5461f89dc240cc6fef944c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000396861f7a17d10cdbb5cf8b51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000cfac61f7a25d6d862a2d18e3 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004b5c62438f2f5eb8e770979c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000633061f89467479b7e0d199e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000ae1861f7acc2b6af28ed6789.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000a43461f4be6deecd068d2c73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000465461f78f18b7281be5b74c %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000ad7c61fd815983645319ab42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000005a7c61f8985ba3977f87220c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004b8861f5995745a69ce2ef02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000395061f7a78932deeed16240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000879061f59a754de92d1c1b2c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000000a0861f8a34572086b071e021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000150061f5a9bf642047b857dd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000881061f7bcab14edebc85cac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000dc0861f5bfe476ac40fd1df7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b60385.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000000a0861f8a34572086b071e022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603851.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000150061f5a9bf642047b857dd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603852.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000881061f7bcab14edebc85cac1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603853.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000dc0861f5bfe476ac40fd1df71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603854.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000ad7c61fd815983645319ab421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000005a7c61f8985ba3977f87220c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603855.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000005a7c61f8985ba3977f87220c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004b8861f5995745a69ce2ef021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603856.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004b8861f5995745a69ce2ef022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603857.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000395061f7a78932deeed162401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603858.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000aa1861f580d7b96789f519ac1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b603859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000396861f7a17d10cdbb5cf8b52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000d65c61fdb1a2df461e9256b31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038510.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000d65c61fdb1a2df461e9256b32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002e5461f89dc240cc6fef944c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004b5c62438f2f5eb8e770979c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038513.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000633061f89467479b7e0d199e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000ae1861f7acc2b6af28ed67891.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038515.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000a43461f4be6deecd068d2c731.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000039fc61f7940ddd5fd2c28ce32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038517.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000f37461f7b3c81ce78e4269781.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038518.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000dbdc61f8bfac5700ec5907d81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038519.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000036d461fdbe609c19c54ab86a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038520.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000107461fd89584c6372a26d931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000aa006246b006e31e7df7be2e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004e0061f5a31ecbc2cb1dcc7f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000004e0061f5a31ecbc2cb1dcc7f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000007cf461f4ae27cad0368d743d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000002ca061f885c116b8b6b6038524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000041c061f88a72960545dd7f20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000041c061f88a72960545dd7f201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000009a2461f8b6644034c8cb31a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000009a2461f8b6644034c8cb31a11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000030b061f6a7899cf3c8664932.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000723c61f8b13b21e82df56227.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000025861f9812e0e7f538376bd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000103861f98e8e2ae6bc090cd4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000f1286230a3b9b0a3198033a0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000e96861f8bf1045b9a9dfcd7b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000255861f892939bfd2de8a940.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000c08861f88df53139aa982027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000041e8622fa748a7fe1c1988bf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000007a3061f7bc026e5cbbc05b25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000036a861f79b8eafdae41bf8d3 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000046c61f8b4b8ef1e69a93558.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000067b061fd8d36a83d02fbce2c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000046c61f8b4b8ef1e69a935581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000067b061fd8d36a83d02fbce2c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000096c061f8afc66d7068585491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000096d46246b7d70f5806225bb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000009f9461f490aaa37391ebc846.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000583461fd99db974b580cb79f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000096d46246b7d70f5806225bb11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000b540622fa6f2d2fec6cf7a2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_0000000038806246a180dfc950879b90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000b25462468260b107da5b2a27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9fb4711a395c88d_file_0000000039a862438389c81bb8fd8697_wm.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
